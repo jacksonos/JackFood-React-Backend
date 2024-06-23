@@ -1,7 +1,7 @@
 
 # Jack Food 🍽️ | Backend 
 
-¡Bienvenido! 👋 Este proyecto es el backend con Spring Boot del repositorio https://github.com/jacksonos/JackFood-React-Frontend, y está estructurado para facilitar su ejecución mediante una configuración sencilla.
+¡Bienvenid@! 👋 Este proyecto es el backend con Spring Boot del repositorio https://github.com/jacksonos/JackFood-React-Frontend, y está estructurado para facilitar su ejecución mediante una configuración sencilla.
 
 ## Requisitos previos ❗
 
