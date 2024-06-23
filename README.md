@@ -1,103 +1,50 @@
-# Jack Food
 
-1. **User:**
-    - ID (Auto-generated)
-    - Username
-    - Password
-    - Email
-    - Phone Number
-    - Address
-    - Role (Customer or Restaurant Owner)
-    - Registration Date
-    - Last Login Date
-2. **Restaurant:**
-    - ID (Auto-generated)
-    - Name
-    - Description
-    - Cuisine Type
-    - Address
-    - Contact Information
-    - Opening Hours
-    - Ratings
-    - Image URL
-    - Registration Date
-3. **Menu Item:**
-    - ID (Auto-generated)
-    - Name
-    - Description
-    - Price
-    - Category
-    - Image URL
-    - Availability Status
-    - Restaurant (reference to Restaurant entity)
-    - Creation Date
-4. **Order:**
-    - ID (Auto-generated)
-    - Customer (reference to User entity)
-    - Restaurant (reference to Restaurant entity)
-    - Total Amount
-    - Order Status
-    - Timestamp
-    - Delivery Address
-    - Items (list of Order Items)
-    - Payment (reference to Payment entity, if applicable)
-5. **Order Item:**
-    - ID (Auto-generated)
-    - Menu Item (reference to Menu Item entity)
-    - Quantity
-    - Subtotal
-    - Order (reference to Order entity)
-6. **Payment:**
-    - ID (Auto-generated)
-    - Order (reference to Order entity)
-    - Payment Method
-    - Payment Status
-    - Total Amount
-    - Payment Timestamp
-7. **~~Delivery Executive:~~**
-    - ~~ID (Auto-generated)~~
-    - ~~Name~~
-    - ~~Contact Information~~
-    - ~~Availability Status~~
-    - ~~Current Location (Latitude and Longitude)~~
-8. **Review/Rating:**
-    - ID (Auto-generated)
-    - Customer (reference to User entity)
-    - Restaurant (reference to Restaurant entity)
-    - Rating
-    - Review Text
-    - Timestamp
-9. **Promotion/Coupon:**
-    - ID (Auto-generated)
-    - Code
-    - Discount Amount
-    - Validity Period
-    - Terms and Conditions
-10. **Notification:**
-    - ID (Auto-generated)
-    - Recipient (reference to User, Restaurant, or Delivery Executive entity)
-    - Message
-    - Timestamp
-    - Read Status
-11. **Category:**
-    - ID (Auto-generated)
-    - Name
-12. **Address:**
-    - ID (Auto-generated)
-    - Street Address
-    - City
-    - State/Province
-    - Postal Code
-    - Country
-    
-13. contact information
-    - email
-    - mobile
-    - twitter
-    - instagram
+# Jack Food 🍽️ | Back 
 
-**service**
+¡Bienvenido! 👋 Este proyecto es el backend con Spring Boot del repositorio https://github.com/jacksonos/JackFood-React-Frontend, y está estructurado para facilitar su ejecución mediante una configuración sencilla.
 
-**service-implementation**
+## Requisitos previos ❗
 
-**controller**
+Antes de comenzar, asegúrate de tener instalados los siguientes requisitos en tu sistema:
+
+- Java 19
+- MySQL
+- IDE preferido
+
+## Correr localmente 💡
+
+Clona el repositorio:
+
+```bash
+  git clone https://github.com/jacksonos/JackFood-React-Backend.git
+```
+
+
+
+## Variables de entorno ❎
+
+Para ejecutar este proyecto, tendrás que modificar el archivo `application.properties` y sus siguiente variables:
+
+### Base de datos 🛢
+Para la configuración de MySQL:
+
+`DB_PORT`
+
+`DB_NAME`
+
+`DB_USERNAME`
+
+`DB_PASSWORD`
+
+### Gatway de pago por Stripe 💵
+
+Cambia por tu secret key de Stripe ➡️ `stripe.api.key`
+
+### Envio por Gmail 📫
+Tutorial para generar tu Gmail App Pasword ➡️ https://www.youtube.com/watch?v=N_J3HCATA1c
+
+`spring.mail.username`
+
+`spring.mail.password`
+
+
