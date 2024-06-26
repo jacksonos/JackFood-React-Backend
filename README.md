@@ -21,7 +21,7 @@ Clona el repositorio:
 
 
 
-## Variables de entorno ❎
+## Modificar ❎
 
 Para ejecutar este proyecto, tendrás que modificar el archivo `application.properties` y sus siguiente variables:
 
